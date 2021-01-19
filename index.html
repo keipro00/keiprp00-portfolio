@@ -1,0 +1,355 @@
+<!-- こんにちは、けいぷろです！
+ソースコードを見に来ていただきありがとうございます！
+多少でも関心をもっていただき嬉しいです(ﾉД`)ｼｸｼｸ
+
+駆け出しではありますがよろしくお願いいたしますm(__)m
+ -->
+
+<!DOCTYPE html>
+<html lang="jp">
+
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KJ1KZVJ43"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7KJ1KZVJ43');
+  </script>
+
+  <!-- OGP -->
+  <meta property="og:title" content="KEISUKE-Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="気軽に見てくださいね！">
+  <meta property="og:url" content="https://keisuke-portfolio.com/">
+  <meta property="og:site_name" content="個人にコミットするWebサイト制作(*^^*)">
+  <meta property="og:image" content="https://keisuke-portfolio.com/image/logo.png">
+
+  <!-- Twitter OGP -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@keipro00" />
+  <meta name="twitter:player" content="@keipro00" />
+
+  <title>KEISUKE_portfolio</title>
+  <!-- favicon -->
+  <link href="image/logo.png" rel="icon" type="image/png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="stylesheet/reset.css">
+  <!-- Java Script -->
+  <script src="index.js"></script>
+  <!-- Adobefont A-OTF UD Shin Maru Go Pr6N L -->
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'czs8qsh',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- 不要<div class="headerline"> -->
+    <div class="logo">
+      <a href="#1"><img src="image/logo.png" alt="ロゴ"></a>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-link"><a href="#1">Home</a></li>
+      <li class="nav-link"><a href="#2">About</a></li>
+      <li class="nav-link"><a href="#3">Works</a></li>
+      <li class="nav-link"><a href="#4">Contact</a></li>
+      <!-- ham-menu-icon -->
+      <div class="ham" id="ham">
+        <span class="ham_line ham_line1"></span>
+        <span class="ham_line ham_line2"></span>
+        <span class="ham_line ham_line3"></span>
+      </div>
+    </ul>
+    <!-- 不要</div> -->
+    <!-- ham-menu-list -->
+    <div class="menu_wrapper" id="menu_wrapper">
+      <div class="menu">
+        <ul>
+          <li class="nav-list"><a href="#1">Home</a></li>
+          <li class="nav-list"><a href="#2">About</a></li>
+          <li class="nav-list"><a href="#3">Works</a></li>
+          <li class="nav-list"><a href="#4">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- メイン -->
+  <div class=main>
+    <div class="main-home" id="1">
+      <div class="main-text">
+        <p class="name">KEISUKE</p>
+        <p id="typing">
+          いらっしゃいませ〜
+        </p>
+      </div>
+      <div class="main-icon">
+        <!-- Twitter icon -->
+        <a href="https://twitter.com/keipro00" target="_blank" rel="noopener noreferrer"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter icon"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 
+          3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg></a>
+
+        <!-- blog icon -->
+        <a href="https://keiproblog.com/" target="_blank" rel="noopener noreferrer"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-laptop-fill icon"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+          </svg></a>
+
+        <!-- GitHub icon -->
+        <a href="https://github.com/keipro00" target="_blank" rel="noopener noreferrer"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github icon"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg></a>
+      </div>
+      <!--不要 <div id="content"> -->
+      <div class="start" id="rect"><a href="#2">↓Go!!↓</a></div>
+      <!-- 不要</div> -->
+    </div>
+
+    <!-- About -->
+    <div class="about-title " id="2">
+      <span style="border-bottom:solid 3px #ff0000" class="title">About Me</span>
+    </div>
+    <div class="about">
+      <div class="about-comment">
+        <p class="about-comment-top">はじめまして！<br>山下佳祐(やましたけいすけ)と申します。<br>1985年生まれの東京在住エンジニアです。</p>
+        <p><b>2020年10月〜12月までプログラミングスクールに通い<br>在学中にホームページの案件などを獲得しました。<br>丁寧なコミュニケーションを通じて寄り添い<br>お客様が満足できるよう努めます。</b>
+        </p>
+        <p><b>前職では、一部上場小売業の店長や広報・IR業務など幅広く経験しています。<br>企業サイトのリニューアルや統合報告書制作などの実績があります。</b></p>
+      </div>
+      <!-- smartphone -->
+      <div class="about-comment-pad">
+        <p class="about-comment-top-pad"><b></b>山下佳祐(やましたけいすけ)<br>35歳の東京在住のエンジニアです。</b></p>
+        <p><b>丁寧なコミュニケーションを通じて、<br>お客様が満足できるよう努めます。</b></p>
+        <p><b>前職で(一部上場小売業)店長や広報・IR業務など幅広く経験しています。</p>
+        <p>企業サイトのリニューアルや統合報告書制作などの実績があります。</b></p>
+      </div>
+      <!-- image -->
+      <img src="image/keisuke-image.jpg" alt="佳祐画像" class="keisuke-image">
+    </div>
+
+    <!-- Skill -->
+    <div class="skill-title">
+      <span style="border-bottom:solid 3px #ff0000" class="title">My Skill</span>
+    </div>
+    <div class="skill">
+      <p>プログラミングスクールで、HTML/CSS、JavaScript、Ruby、Ruby on Railsなどを学習しました。</p>
+      <p>現在は、 上記に加えてPHPも含め主にweb系言語を学習中。</p>
+    </div>
+    <div class="skill-button">
+      <!-- HTML -->
+      <span id="test1" style="display: inline; cursor: hand;"
+        onclick="test2.style.display='inline', this.style.display='none'">
+        <button type="button" class="btn btn-danger">
+          <p>HTML</p>
+        </button></span>
+      <span id="test2" style="display: none; cursor: hand;"
+        onclick="test1.style.display='inline', this.style.display='none'">
+        <img src="image/html.png" width="90px"></span>
+
+      <!-- CSS -->
+      <span id="test3" style="display: inline; cursor: hand;"
+        onclick="test4.style.display='inline', this.style.display='none'">
+        <button type="button" class="btn btn-primary">
+          <p>CSS</p>
+        </button></span>
+      <span id="test4" style="display: none; cursor: hand;"
+        onclick="test3.style.display='inline', this.style.display='none'">
+        <img src="image/css.png" width="90px"></span>
+
+      <!-- Java Script -->
+      <span id="test5" style="display: inline; cursor: hand;"
+        onclick="test6.style.display='inline', this.style.display='none'">
+        <button type="button" class="btn btn-warning">
+          <p>Java Script</p>
+        </button></span>
+      <span id="test6" style="display: none; cursor: hand;"
+        onclick="test5.style.display='inline', this.style.display='none'">
+        <img src="image/javascript.png" width="90px"></span>
+
+      <!-- jQuery -->
+      <span id="test7" style="display: inline; cursor: hand;"
+        onclick="test8.style.display='inline', this.style.display='none'">
+        <button type="button" class="btn btn-warning">
+          <p>jQuery</p>
+        </button></span>
+      <span id="test8" style="display: none; cursor: hand;"
+        onclick="test7.style.display='inline', this.style.display='none'">
+        <img src="image/jquery.png" width="90px"></span>
+
+      <!-- Ruby -->
+      <span id="test9" style="display: inline; cursor: hand;"
+        onclick="test10.style.display='inline', this.style.display='none'">
+        <button type="button" class="btn btn-danger">
+          <p>Ruby</p>
+        </button></span>
+      <span id="test10" style="display: none; cursor: hand;"
+        onclick="test9.style.display='inline', this.style.display='none'">
+        <img src="image/ruby.png" width="90px"></span>
+
+      <!-- Ruby on Rails -->
+      <span id="test11" style="display: inline; cursor: hand;"
+        onclick="test12.style.display='inline', this.style.display='none'">
+        <button type="button" class="btn btn-danger">
+          <p>Ruby on Rails</p>
+        </button></span>
+      <span id="test12" style="display: none; cursor: hand;"
+        onclick="test11.style.display='inline', this.style.display='none'">
+        <img src="image/rails.png" width="90px"></span>
+    </div>
+
+    <!-- Works -->
+    <div class="works-title" id="3">
+      <span style="border-bottom:solid 3px #ff0000" class="title">Works</span>
+    </div>
+    <div class="works">
+      <div class="works-comment">
+        <p>コミュニケーションを大切にし、お客様のご要望にお答えします。</p>
+        <p>ロゴの制作からデザイン、コーディングまで行います。</p>
+      </div>
+      <div class="works-info">
+        <p><b>ホームページ制作実績</b></p>
+        <p><b>(概要は</b><a href="https://keiproblog.com/2065/" target="_blank"
+            rel="noopener noreferrer">ブログ</a><b>でも紹介しています）</b></p>
+        <a href="https://imton.jp/" target="_blank" rel="noopener noreferrer" class="imton">美容室『 I'm TON!! 』のホームページ</a>
+      </div>
+      <div class="imton-image">
+        <img src="image/imton.png" alt="imton-web" width="60%">
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact-title" id="4">
+      <span style="border-bottom:solid 3px #ff0000" class="title">Contact</span>
+    </div>
+    <div class="contact-comment">
+      <p>ホームページの制作等の依頼は、下記のリンクよりお願いします。</p>
+      <p>TwitterのDMからでも可能です。制作費は別途ご相談します。お気軽にご相談下さい！</p>
+      </ホームページの制作等の依頼は、下記のリンクよりお願いします。>
+      </p>
+    </div>
+    <div class="contact-image">
+      <p>↓お問い合わせ先はこちら（ブログ）↓</p>
+      <a href="https://keiproblog.com/contact/" target="_blank" rel="noopener noreferrer"><img src="image/blog.png"
+          alt="お問い合わせ先" width="60%"></a>
+    </div>
+
+    <!-- access -->
+    <div class="access-title">
+      <span style="border-bottom:solid 3px #ff0000" class="title">Access</span>
+    </div>
+    <div class="access">
+      <p><b>葛西駅近辺に出没いたします</b></p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12964.597511014814!2d139.8701306190897!3d35.67332370253884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1610427740183!5m2!1sja!2sjp"
+        width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-menu">
+      <div class="footer-icon-block">
+        <!-- Twitter icon -->
+        <a href="https://twitter.com/keipro00" target="_blank" rel="noopener noreferrer"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-twitter footer-icon" viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 
+            3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg></a>
+
+        <!-- blog icon -->
+        <a href="https://keiproblog.com/" target="_blank" rel="noopener noreferrer"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-laptop-fill footer-icon" viewBox="0 0 16 16">
+            <path
+              d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+          </svg></a>
+
+        <!-- GitHub icon -->
+        <a href="https://github.com/keipro00" target="_blank" rel="noopener noreferrer"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-github footer-icon" viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg></a>
+      </div>
+      <div class="footer-home-button">
+        <a href="#1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z" />
+            <path fill-rule="evenodd"
+              d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+          </svg></a>
+      </div>
+      <div class="footer-text">
+        ©keisuke-portfolio
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
